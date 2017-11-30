@@ -107,7 +107,7 @@
 			</div>
 			<hr class="hrr" color="#000" size="1" style="width: 100%;">
 			<div class="text-online">
-				<div class="online-text">Сейчас на сайте человек: <span> ~</span></div><span class="menutogglehide" style="display: none;"> ~</span>
+				<div class="online-text">Сейчас онлайн: <span> ~</span></div><span class="menutogglehide" style="display: none;"> ~</span>
 			</div>
 		</ul>
 	</div>
@@ -142,8 +142,8 @@
 									<img style ="width: 180px;" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uOxh7-Gw_alIITCmGpa7cd4nuz-8oP5jGu5rhc1JjSceNfXJVMgaVmB_QO-wLi5h5HovZ_Kn3A27HR24HrcnRC3g0lJbOFthPKcHwjIUrsJQvfN77TKZw/360fx360f" alt="">
 								</div>
 								<div class = "prizeText_wrapper">
-									<div class = "prizeTitle">Принимай участие в ежедневных розыгрышах!</div>
-									<div class = "prizeText">Заходи в группу VK и подписывайся</div>
+									<div class = "prizeTitle">Прими участие в ежедневных розыгрышах!</div>
+									<div class = "prizeText">Зайди и подпишись в группу VK</div>
 									<a href = "https://vk.com/csgo-fate" class = "" target = "_blank">Подписаться</a>
 								</div>
 							</div>
@@ -192,7 +192,7 @@
                                        
 								</div>
 								<a href="/history" style="margin-left: 35px; color: gray;">История</a>
-								<a href="/top" style="margin-left: 35px; color: gray;">Топ Игроков</a>
+								<a href="/top" style="margin-left: 35px; color: gray;">Топ</a>
 							</div>
 							<div class="game-block">
 								<div class="game-top">
