@@ -1,2 +1,831 @@
-Hello World!
-xzfsfsd
+
+		<!DOCTYPE html>
+<html>
+	<head>
+		<title>Рулетка КСГО (CSGO) - ставки от 1 рубля для бомжей на csgo-go.com</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Рулетка КС ГО - место для выигрыша скинов с минимальной ставкой 1 рубль, которое подойдёт для бомжей опытных игроков рулетки CS GO.">
+		<meta name="keywords" content="кс го рулетка, csgo джекпот,csgo jackpot ,cs go рулетка,рулетка кс го ,cs go рулетка от 1 рубля ,рулетка cs go ,csgo джекпот ,csgo jackpot ,jackpot ,steam ,cs steam ,раздачи ,конкурсы ,рулетка скинов ,скины, cs go скины ,ставки рулетка ,cs:go, cs go ставк">
+		<meta property="og:image" content="/templates/new/images/image.png"/>
+		<meta property="og:title" content="CSGO-GO.COM - лучшая рулетка Counter-Strike: Global Offensive">
+		<link rel="stylesheet" href="/templates/new/style.css?v=1.25184" type="text/css">
+		<link rel="stylesheet" href="/templates/new/fonts.css?v=0.001" type="text/css">
+		<link rel="stylesheet" href="/templates/new/chat.css?v1.03" type="text/css">
+		<link rel="stylesheet" href="/templates/new/jquery.arcticmodal-0.3.css">
+		<link rel="stylesheet" href="/templates/new/simple.css">
+		<link href="/templates/new/images/LOGO32.png" rel="shortcut icon" type="image/x-icon">
+		<meta name="viewport" content="width=device-width">
+		<script defer src="/templates/new/js/socket.io.js" type="text/javascript" language="javascript"></script>
+		<script src="/templates/new/js/jquery-1.11.1.min.js" type="text/javascript" language="javascript"></script>
+		<script defer src="/templates/new/js/md5.min.js" type="text/javascript" language="javascript"></script>
+		<script defer src="/templates/new/js/jquery.noty.packaged.min.js"></script>
+		<script defer src="/templates/new/js/jquery.arcticmodal-0.3.min.js"></script>
+		<script defer src="/templates/new/js/jquery.easing.1.3.js" type="text/javascript" language="javascript"></script>
+		<script defer src="/templates/new/js/jquery.pseudo.js" type="text/javascript" language="javascript"></script>
+		<script defer src="/templates/new/js/fn.js?v=19" type="text/javascript" language="javascript"></script>
+		<script defer src="/templates/new/js/update.js" type="text/javascript" language="javascript"></script>
+		<script defer src="/templates/new/js/chat.js?v=1.2409" type="text/javascript" language="javascript"></script>
+		<script defer src="/templates/new/js/tbots.js?v=1.2774" type="text/javascript" language="javascript"></script>
+		<script defer src="/templates/new/js/jquery.slimscroll.min.js" type="text/javascript" language="javascript"></script>
+		<script defer src="/templates/new/js/jqueryrotate.js" type="text/javascript" language="javascript"></script>
+				<script type="application/ld+json">
+		{
+			"@context" : "https://schema.org",
+			"@type" : "Organization",
+			"name" : "Рулетка КСГО (CSGO) от 1 рубля для бомжей CSGO-GO.COM",
+			"url" : "https://csgo-go.com",
+			"sameAs" : [
+				"https://vk.com/csgogocom"
+			]
+		}
+		</script>
+	</head>
+	<body class="wide-mode chat-hidden showChat">
+		<div class = "main_wrapper">
+			<div class = "header_wrapper wrapper">
+				<div class = "header block">
+					<div class = "header_top blueBg">
+						<div class = "logo" style="float: left; margin-left: 10px; margin-top: 7px;">
+						</div>
+						<div class = "after_header">
+
+						</div>
+						<a href = "/?login" class = "login">
+							Войти
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class = "wrapper">
+				<div class = "body block">
+					<div class = "leftside">
+	<div class="bgscreen">
+	<div class="menu-toggle"></div>
+		<ul class = "menu"><!--60px при сжатии меню -->
+			<div class="menuScroll">
+				<div class="hiddenScroll">
+					<li class = "mode current">
+						<a href = "/" style="background-repeat: no-repeat;background-image: url(/templates/new/images/newicons/classic.png);background-size: 40px;background-position: 5%;">
+							<span class="icon" alt="" style="float: left; margin-left: 20px; margin-right: -40px; margin-top: 20px;">
+							</span>
+							<div class="menu-text">Classic Game</div>
+							<div class="classicsum">На кону: <span>0 </span> <img src="/templates/default/images/coins.png" alt="" style="width: 12px; height: 12px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></div>
+						</a>
+					</li>
+					<li class = "mode current">
+						<a href = "/highbets" style="background-repeat: no-repeat;background-image: url(/templates/new/images/newicons/high.png);background-size: 40px;background-position: 5%;">
+							<span class="icon" alt="" style="float: left; margin-left: 20px; margin-right: -40px; margin-top: 20px;">
+							</span>
+							<div class="menu-text new" style="font-size: 10pt;">High Bets (0% ком.)</div>
+							<div class="hbsum">На кону: <span>0 <img src="/templates/default/images/coins.png" alt="" style="width: 12px; height: 12px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></span></div>
+						</a>
+					</li>
+					<li class = "mode current">
+						<a href = "/oneonone" style="background-repeat: no-repeat;background-image: url(/templates/new/images/newicons/duel.png);background-size: 40px;background-position: 5%;">
+							<span class="icon" alt="" style="float: left; margin-left: 20px; margin-right: -40px; margin-top: 20px;">
+							</span>
+							<div class="menu-text beta">Duel Game</div>
+							<div class="coinflipnum">На кону: <span>139320 <img src="/templates/default/images/coins.png" alt="" style="width: 12px; height: 12px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></span></div>
+						</a>
+					</li>
+										<li class = "mode current">
+						<a href = "/doublegame" style="background-repeat: no-repeat;background-image: url(/templates/new/images/newicons/double.png);background-size: 40px;background-position: 5%;">
+							<span class="icon" alt="" style="float: left; margin-left: 20px; margin-right: -40px; margin-top: 20px;">
+							</span>
+							<div class="menu-text">Double Game</div>
+							<div class="doublenum">На кону: <span class>0</span> <img src="/templates/default/images/coins.png" alt="" style="width: 12px; height: 12px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></div>
+						</a>
+					</li>
+										<li class = "current menubg">
+						<a href = "/withdraw" style="background-repeat: no-repeat;background-image: url(/templates/new/images/newicons/shop.png);background-size: 40px;background-position: 5%;">
+							<span class="icon" alt="" style="float: left; margin-left: 20px; margin-right: -40px; margin-top: 15px;">
+							</span>
+							<div class="menu-text">Магазин</div>
+						</a>
+					</li>
+																			</div>
+			</div>
+			<hr class="hrr" color="#000" size="1" style="width: 100%;">
+			<div class="text-online">
+				<div class="online-text">Сейчас на сайте человек: <span> ~</span></div><span class="menutogglehide" style="display: none;"> ~</span>
+			</div>
+		</ul>
+	</div>
+</div>					<div class = "content">						<div class = "contentBlock game">
+														
+																<div class="page_title title blueBg oo_title">
+								<center><div style="background-repeat: no-repeat; background-image: url(/templates/new/images/newicons/percentage.png); background-position: 1%; padding-left: 10px;">Попробуйте новый режим <a href="/highbets" style="color: red; display: inline; float: none; margin-left: 0px;">High Bets</a> с комиссией 0% !</div></center>
+							    </div>
+							   												<div class = "total_stats_block">
+								<div class = "total_stats blockBg" id = "count_games">
+									<div class = "stats_title" style="margin-top:10px">Сегодня игр</div>
+									<div class = "value" style="margin-top:-10px"><span>26</span></div>
+								</div>
+								<div class = "total_stats blockBg" id = "count_uniq_user">
+									<div class = "stats_title">Сегодня<br> уникальных игроков</div>
+									<div class = "value"><span>22</span></div>
+								</div>
+								<div class = "total_stats blockBg" id = "count_items">
+									<div class = "stats_title">Сегодня<br> разыграно вещей</div>
+									<div class = "value"><span>581</span></div>
+								</div>
+								<div class = "total_stats blockBg" id = "max_prize">
+									<div class = "stats_title">Максимальный<br> выигрыш сегодня</div>
+									<div class = "value">3500 <img src="/templates/default/images/coins.png" alt="" style="width: 16px; height: 16px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></div>
+								</div>
+						</div>		
+						</div>
+						
+						<!--<div id="showadblocks" class = "contentBlock prizeBlock blockBg" style="transition: 800ms ease; transform: rotateY(0deg);">
+							<div id="showadblocks_info">
+								<div class = "item_image">
+									<img style ="width: 180px;" src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uOxh7-Gw_alIITCmGpa7cd4nuz-8oP5jGu5rhc1JjSceNfXJVMgaVmB_QO-wLi5h5HovZ_Kn3A27HR24HrcnRC3g0lJbOFthPKcHwjIUrsJQvfN77TKZw/360fx360f" alt="">
+								</div>
+								<div class = "prizeText_wrapper">
+									<div class = "prizeTitle">Принимай участие в ежедневных розыгрышах!</div>
+									<div class = "prizeText">Заходи в группу VK и подписывайся</div>
+									<a href = "https://vk.com/csgo-fate" class = "" target = "_blank">Подписаться</a>
+								</div>
+							</div>
+						</div>
+						<div id="adblocks" style="display:none;">
+							<div class="adblock">
+								<div class = "item_image">
+									<img style ="width: 140px; padding-top: 15px"  src="http://duuro.net/wp-content/uploads/2016/06/image003-310x310.png" alt="">
+								</div>
+								<div class = "prizeText_wrapper">
+									<div class = "prizeTitle">Розыгрыш Watch Dogs 2(PC)/Скины CS:GO!</div>
+									<div class = "prizeText">НЕ ПРОПУСТИ!</div>
+									<a href = "https://www.youtube.com/watch?v=VXfMxYlT3A8" class = "" target = "_blank">Испытай Удачу!</a>
+								</div>
+							</div>
+							<div class="adblock">
+								<div class = "item_image">
+									<img style ="width: 140px; padding-top: 15px"  src="http://duuro.net/wp-content/uploads/2016/06/image003-310x310.png" alt="">
+								</div>
+								<div class = "prizeText_wrapper">
+									<div class = "prizeTitle">Розыгрыш Watch Dogs 2(PC)/Скины CS:GO!</div>
+									<div class = "prizeText">НЕ ПРОПУСТИ!</div>
+									<a href = "https://www.youtube.com/watch?v=VXfMxYlT3A8" class = "" target = "_blank">Испытай Удачу!</a>
+								</div>
+							</div>
+							<div class="adblock">
+								<div class = "item_image">
+									<img style ="width: 140px; padding-top: 15px"  src="http://duuro.net/wp-content/uploads/2016/06/image003-310x310.png" alt="">
+								</div>
+								<div class = "prizeText_wrapper">
+									<div class = "prizeTitle">Розыгрыш Watch Dogs 2(PC)/Скины CS:GO!</div>
+									<div class = "prizeText">НЕ ПРОПУСТИ!</div>
+									<a href = "https://www.youtube.com/watch?v=VXfMxYlT3A8" class = "" target = "_blank">Испытай Удачу!</a>
+								</div>
+							</div>
+						</div>-->
+						<div class = "contentBlock game">
+							<div class="game_title topmineBg">
+								<span class="icon icon-Crown" alt=""></span> Classic Game
+								<div class="middle-block classic-game-bonus" style="margin-left: 145px;">
+									<div class="classic-bleat-block">
+									<div class="bonus-modal-open" href="#bonus">
+									Получи <span class="classic-bonus-value">5%</span> бонус к выигрышу
+									</div>
+									</div>
+                                       
+								</div>
+								<a href="/history" style="margin-left: 35px; color: gray;">История</a>
+								<a href="/top" style="margin-left: 35px; color: gray;">Топ Игроков</a>
+							</div>
+							<div class="game-block">
+								<div class="game-top">
+									<div class="game-header">
+										<div class="game-title">Игра №<span class="game_number">10444</span><p style="color: yellow; margin-top: -20px; margin-left: 350px">1000 <img src="/templates/default/images/coins.png" alt="" style="width: 16px; height: 16px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"> = 1 <img src="/templates/new/images/icons/dollar-symbol.png" alt="" style="width: 16px; height: 16px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></p></div>
+									</div>
+								</div>
+								<div class="game-active-container">
+									<div class="game-active">
+										<div class="game-progress">
+											<div class="wrap-progressbar">
+												<div>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50" style="width: 0%">
+															<div class="progressbar-stripes" style="background-color: #ffff00;"></div>
+														</div>
+																											<div class="progressbar-text">
+														<span>0/200</span>
+														вещей
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="or-text">или</div>
+											<div class = "timer clearfix">
+												<div class = "timer_block clearfix">
+													<div class = "timer_minutes timer_count darkBlueBg">
+														01													</div>
+													<div class = "timer_delmiter"></div>
+													<div class = "timer_second timer_count darkBlueBg">
+														30													</div>
+												</div>
+											</div>
+											<!-- progressbar end -->
+										</div>
+										<center>
+											<div class="price-game">
+												<div class="arrow-game-left"></div>
+												<div id="prpr">Вступай в игру сейчас и выиграй: <span class="forscript prize">0 <img src="/templates/default/images/coins.png" alt="" style="width: 16px; height: 16px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></span></div>
+												<div class="arrow-game-right"></div>
+											</div>
+										</center>
+																				<div class = "current_user_stats clearfix">
+											<div class = "clearfix">
+												<div class = "count_items">
+													<div class = "count">Условия Classic игры:</div>
+													<div class = "prompt">Мин. ставка 1 <img src="/templates/default/images/coins.png" alt="" style="width: 16px; height: 16px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;">, максимум предметов 32.</div>
+													<div class = "prompt">Чем выше ставка, тем больше шанс победить. Подробнее.</div>
+												</div>
+												<i class="arrows-gray-right"></i>
+												<div class = "chanse_stat">
+													<div class = "chanse_text"><span></span></div>
+												</div>
+												<a class="btn-yellow middle-block button_add" href="/?login" target="_blank">					
+													Войти через STEAM чтобы играть!
+												</a>
+											</div>
+										</div>
+																			</div>
+									<div class="round_block"></div>
+								</div>
+							</div>
+							<!--
+							<div class = "game_title darkBlueBg game_number">
+								Игра №<span>10444</span>
+							</div>
+							<div class = "round_block">
+								<div class = "game_info_block">
+									<div class = "timer clearfix">
+										<div class = "progress_block">
+											<div class = "progress" style = "width : 0%"></div>
+											<div class = "progress_text">
+												<div class = "progress_value">
+													20												</div>
+												<div class = "progress_player">
+													игроков
+												</div>
+											</div>
+										</div>
+										<div class = "timer_title">До начала розыгрыша</div>
+										<div class = "timer_block clearfix">
+											<div class = "timer_minutes timer_count darkBlueBg">
+												01											</div>
+											<div class = "timer_delmiter">
+											</div>
+											<div class = "timer_second timer_count darkBlueBg">
+												30											</div>
+										</div>
+										<div class = "add_items">
+																						<a href = "/?login" target = "_blank" class = "itemButton"><span class = "buttonBg"><span class = "addText">Вступай в игру сейчас и выиграй:</span></span></a><span class = "bank"><span class = "forscript prize">0</span> Р</span>
+																					</div>
+									</div>
+								</div>
+															</div>
+							-->
+							<div class = "winner_wrapper">
+								<div class = "timers winner">
+									<!--
+									<div class = "timer_title">Игра закончилась!</div>
+									-->
+									<div class = "roulette_wrapper">
+										<div class = "roulette"></div>
+									</div>
+									<div class = "roulette_selector"></div>
+									<div class = "roulette_selector" style="margin-top: -13px; opacity: 0.8;"></div>
+									<div class = "roulette_selector" style="margin-top: -13px; opacity: 0.5;"></div>
+									<div class = "winner_tick">Билет: <span>???</span></div>
+									<div class = "winner_text">Победитель: <span>???</span></div>
+									<div class="winner-cost">
+										<span class="winner-cost-value">0 <img src="/templates/default/images/coins.png" alt="" style="width: 16px; height: 16px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></span>
+									</div>
+									<div class = "winner-time">
+										<font class="new_round_block_start_text_novaya_igra_cherez">Новая игра через:</font> <span class="winner-time-value">20</span>
+									</div>
+									
+									<div class = "next_round_timer_wrapper clearfix" style="display: none;">
+										<div class = "next_round_timer">
+											Новая игра через: <span>20</span>
+										</div>
+									</div>
+									<a class="btn-yellow middle-block button_add" style="margin-top: 56px; margin-right: 15px;" href="/?login"  onclick="window.open('https://steamcommunity.com/tradeoffer/new/?partner=385950861&token=twqI50v0', 'newwindow', 'width=625, height=625'); return false;">
+										Внести депозит первым
+									</a>
+									<!--
+									<div class = "prize"><span class = "forscript prize">0</span> <img src="/templates/default/images/coins.png" alt="" style="width: 16px; height: 16px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></div>
+									-->
+									<!--
+									<div class = "winner_info">
+										<div class = "winner_name">
+											<div class = "winner_text">Победил игрок:</div> <span>???</span>
+										</div>
+										<div class = "winner_prize">
+											<div class = "prize"><span class = "forscript prize">0</span> Р</div>
+										</div>
+										<div class = "more_info">
+											<div class = "winner_num">Число раунда: <span>???</span></div>
+											<div class = "winner_tick">Билет: <span>???</span></div>
+											<div class = "winner_sec">Секрет: <span>???</span></div>
+											<div class = "winner_hash">Хэш раунда: <span>???</span></div>
+										</div>
+									</div>
+									-->
+								</div>
+							</div>
+							<div class="finish_game" style="display:none;">
+								<div class="finish_title">Игра закончилась</div>
+								<div class="round_number">Число раунда: <span></span></div>
+								<div class="round_secret">Секретное слово: <span></span></div>
+								<div class="round_hash">Хэш раунда: <span></span></div>
+							</div>
+							<div class = "percent_place"></div>
+								<div class = "bets_block blockBg">
+																<div class = "game_title"></div>
+								<!--
+								<div class="game-classic-footer">
+									<div>
+										<div class="gametime gamestart">
+											<span class="icons-start"></span>
+											<div class="gametime-text first-row">Игра началась! Вносите депозит!</div>
+											
+											<div class="fairplay">
+												<a href="#faq/general/12">Честная игра</a>
+												<div class="fairplay-title">Хэш раунда:</div>
+												<div id="roundHash">68a091e39afc82db8526701841549325</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								-->
+
+								<!--
+	<div class="game_hash darkBlueBg">
+									Хеш раунда: <span>68a091e39afc82db8526701841549325</span>
+								</div>
+-->
+</div>
+	                            <div class="game_title newColorBG">
+									<span class="icons-start"></span>
+									<center style="margin-right:65px">Игра началась! Вносите Депозиты!</center>
+									<div class="game_hashs">
+									<a href="/testhash" class="chesnaya_games" style="margin-left:140px" >Честная игра</a>
+									<a class="chesnaya_games" style="margin-left:10px" >CSGO-GO.COM is NOT affiliated with VALVE corp</a>
+									</div>
+								</div>
+						</div>
+						<div class="widgets">
+																<div class = "last_winner" >
+									<div class = "last_winner_text">Последний победитель</div>
+									<div class="last_winner_body">
+										<div class = "last_winner_avatar last_game_ava">
+											<span class = "openProfile" data = "76561198290601026"><img src = "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/5c/5c9d3c4740e3b4f8043cfd25558af0dcd9f58913_full.jpg" alt = "Kewa ★*****.co★"></span>
+										</div>
+										<div class = "last_winner_name last_game_name"><span class = "openProfile" data = "76561198290601026">Kewa ★*****.co★</span></div>
+									</div>
+									<div class = "last_winner_calc darkBlueBg">
+										<div class = "last_winner_price last_block_price">
+											<div class = "last_winner_calc_title">Выигрыш:</div>
+											<div class = "last_winner_calc_num last_value"><span>900</span> <img src="/templates/default/images/coins.png" alt="" style="width: 16px; height: 16px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></div>
+										</div>
+										<div class = "last_winner_percent last_block_perscent">
+											<div class = "last_winner_calc_title">Шанс:</div>
+											<div class = "last_winner_calc_num last_perscent"><span>11.11</span>%</div>
+										</div>
+									</div>
+								</div>
+																<div class = "last_winner" >
+									<div class = "last_winner_text">Счастливчик дня</div>
+									<div class="last_winner_body luckybg">
+										<div class = "last_winner_avatar">
+											<span class = "openProfile" data = "76561198352672583"><img src = "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/10/10358839499c1ce8dbdcc80864ca0c62ec18546b_full.jpg" alt = "FAZE \\"></span>
+										</div>
+										<div class = "last_winner_name"><span class = "openProfile" data = "76561198352672583">FAZE \\</span></div>
+										</div>
+									<div class = "last_winner_calc darkBlueBg">
+										<div class = "last_winner_price">
+											<div class = "last_winner_calc_title">Выигрыш:</div>
+											<div class = "last_winner_calc_num"><span>710</span> <img src="/templates/default/images/coins.png" alt="" style="width: 16px; height: 16px; margin-bottom: -8px;margin-right: 3px; padding-bottom: 7px;"></div>
+										</div>
+										<div class = "last_winner_percent">
+											<div class = "last_winner_calc_title">Шанс:</div>
+											<div class = "last_winner_calc_num"><span>2.82</span>%</div>
+										</div>
+									</div>
+								</div>
+								<div class="giveaway_block">
+									<div class = "last_winner_text">Мощные розыгрыши</div>
+									<div class="giveaway_block_img"></div>
+									<a class="btn" style="margin-top: 5px;border-radius: 0;font-size: 12pt;font-weight: 600;color: #212f35;width: 135px;" target="_blank" href="https://vk.com/csgogocom">Подпишись</a>
+								</div>
+							</div>
+    <div class = "jackpot blockBg">
+								<div class = "jackpot_text">
+									<h1><span style="color:#FFFFFF">Рулетка КС ГО от одного рубля</span></h1>
+
+<p><span style="color:#FFFFFF">csgo-go.com - это рулетка скинов Counter-Strike: Global Offensive, в которой участвующие делают ставки предметами из CS:GO. При достижении определенного максимума игроков или по истечении времени, случайным образом среди всех участников выбирается победитель, который и забирает все поставленные предметы за вычетом комиссии сайта в размере 10% (5% с именем сайта в нике Steam). Вероятность выигрыша в лотерее зависит от суммы внесенных предметов, чем больше сумма относительно других ставок, тем выше вероятность победы. Но так как это рулетка, шансы на победу имеет каждый участник внесший предметы.</span></p>
+
+<p><span style="color:#FFFFFF">Отличительная особенность нашей рулетки кс го, заключается в том, что к участию принимаются любые предметы из игры cs go, вне зависимоcти от их качества и цены, главное чтобы их общая стоимость превышала минимальную ставку в размере 1 рубля. Приятной игры!</span></p>
+
+<p style="text-align:center">&nbsp;</p>
+								</div>
+	</div>
+	<div style="padding: 15px;" class="seo blockBg">
+								<font size="2" color="#fff" face="Arial">
+									<center>
+										<h3>
+											<b>
+												CSGO-GO.COM — честная рулетка CS:GO
+											</b>
+										</h3>
+									</center>
+									<p>
+										Поклонники Counter-Strike:Global Offensive — просто счастливчики. У них есть возможность получать очень крутые уникальные скины. Правда, в самой игре это сделать достаточно сложно. Если вы не хотите тратить на предметы много денег, отличным выбором станет наша <b>рулетка КСГО скинов</b>. На рулетка кс го от рубля вы можете попытать счастье и заработать действительно ценный приз.
+										<br>
+										<br>
+										Сайт CSGO-GO.COM — это честная <b>рулетка КС ГО для бомжей </b>или новичков в этом деле. Почему именно «для бомжей»? Конечно, название шуточное, однако оно очень точно отражает суть того,  чтобы мы вам предлагаем. Дело в том, что у нас на <b>рулетке КС ГО от 1 рубля</b> можно ставить, чтобы принять участие в розыгрыше. Согласитесь, такая сумма найдется у каждого. А вот выигрыш может быть действительно крупным.
+										<br>
+										<h2>
+											<b>Как сделать ставку на нашей рулетке кс го?</b>
+										</h2>
+										<br>
+										Уникальное оружие — это мечта множества геймеров. Чтобы получить его у нас, вам не нужны ни опыт, ни большие деньги. Немного везения — и джек-пот у вас в кармане!
+										<br>
+										Сделать <b>ставку русская рулетка КС ГО</b> позволяет очень просто. Для этого нужно выполнить несколько действий:
+										<br>
+										•	авторизуйтесь, используя свой Steam-аккаунт;
+										<br>
+										•	внесите депозит. Напомним, что ставки ксго на рулетке для бомжей КСГО от 1 рубля. Однако чем большим будет ваш депозит, тем больше шансов стать победителем;
+										<br>
+										•	каждому участнику выдаются билеты. Чем их больше, тем выше шансы на победу. 1 билет — это 1 копейка;
+										<br>
+										•	когда достигается отметка в 100 скинов или истекает 2 минуты - выбирается один победитель;
+										<br>
+										•	счастливчик получает все скины, которые поставлены в раунд на ставки вещей кс го рулетка.
+										<br>
+										Таким образом, <b>ставки ксго вещей КСГО рулетка от 1 рубля</b> позволяет делать невероятно легко. Каждый может принять участие в розыгрыше и получит дорогое оружие на рулетка кс го рубля бомжей.
+										<br>
+										<br>
+										<h2>
+											<b>Преимущества рулетки скинов csgo-go.com</b>
+										</h2>
+										<br>
+										Сомневаетесь, играть или не играть на бомж рулетки кс го от 1 рубля? Выбирать только вам! Мы лишь можем сказать, почему вам стоит выбрать именно нашу кс го рулетка ставки 1:
+										<br>
+										•	только честный розыгрыш. Победителя определяет автоматическая система;
+										<br>
+										•	комиссия, которая берется с победителя, очень маленькая — всего 10%. Она идет на то, чтобы развивать наш проект;
+										<br>
+										•	сделать ставку может каждый, ведь минимальный депозит — всего 1 рубль на рулетка вещей кс го;
+										<br>
+										•	максимальный депозит составляет 20 скинов;
+										<br>
+										•	если наш пользователь добавит к своему нику название нашего сайта «csgo-go.com», то получит +5% к к выигрышу;
+										<br>
+										•	на сайте действует реферальная система. Приводите друзей и получайте деньги. 
+										<br>
+										•  	уникальная система рефералов, делитесь промокодами рулетки кс го своим друзьям и получайте процент с их выигрышей, а они в свою очередь получат небольшую сумму, которую смогут потрать на покупку скинов кс го в магазине
+										Попытайте счастья на лучшей бич рулетке рулетке кс го csgo-go.com! Удача обязательно улыбнется именно вам на кс го рулетка ставки от 1 рубля ! 
+									</p>
+								</font>
+							</div>
+												<div style="display: none;">
+							<div class="deposite_modal">
+								<div class="bbm-modal__section">
+										<div class="modal_buttons" style="margin-top:0px">
+											<div href = "#addCards" class = "addItemsToGame addCardsToGame btn-yellow middle-block button_add">Внести Монеты</div>
+										</div>
+									<div class="section-text">
+										<p>
+											<b>Выбирай:</b>
+										</p>
+									</div>
+										<div class="modal_buttons" style="margin-top:55px">
+											<a class="btn-yellow middle-block button_add" href="https://steamcommunity.com/tradeoffer/new/?partner=385950861&token=twqI50v0"  onclick="window.open('https://steamcommunity.com/tradeoffer/new/?partner=385950861&token=twqI50v0', 'newwindow', 'width=625, height=625'); return false;">
+												Внести Скины
+											</a>	
+										</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					<div class="clearboth"></div>
+				</div>
+				<div class="clearboth"></div>
+			</div>
+			<div class="clearboth"></div>
+			<div class = "empty"></div>
+		</div>
+		<script>
+		function hideCB() {
+			$.cookie('seenBanner', true, {
+				expires: 1,
+				path: '/'
+			});
+		}
+		</script>
+		<div id="competition_banner" class="hidden">
+			<a href="https://www.youtube.com/channel/UCBGaItdIMCzt2CyyV8V4jhA" target="_blank" onclick="$('#competition_banner').hide();hideCB();">
+				<img src="/templates/new/images/awp1.png" alt="Розыгрыш скинов">
+			</a>
+		</div>
+		<div class="clearboth"></div>
+		<div style="display: none;">
+			<div class="pay_modal">
+				<div class="modal-top">
+					<h2>ПОЛУЧИ СВОИ МОНЕТЫ</h2>
+				</div>
+				<div class="modal-content">
+					<div class="modal-section">
+						<div class="section-head">
+							<div class="section-block deposite-icon"></div>
+							<div class="section-block title">Пополнение скинами</div>
+						</div>
+						<div class="section-description">
+							<div class="section-text">
+								Обменяйте свои скины стоимостью от 10 рублей на монеты(Coins). За каждые 65 копеек Вы получите 1 монет
+							</div>
+							<div class="section-check-box-container " value="" style="margin-top: 75px">
+								<input type="checkbox" name="option1" value="a1" checked>
+								<span class="check-box-title" style="color: inherit">Мне 18 и я ознакомился с <a href="/terms" style="color: orange">правилами и условиями</a></span>
+                            </div>
+						</div>
+						<div class="btn-link"><a class="btn" href="/deposite">Пополнить</a></div>
+					</div>
+					<div class="modal-section">
+						<div class="section-head">
+							<div class="section-block partner-icon"></div>
+							<div class="section-block title">Партнерская программа</div>
+						</div>
+						<div class="section-description">
+							<div class="section-text">
+								Получите монеты за приглашение новых игроков на проект с помощью реферальной ссылки или кода
+							</div>
+							<div class="section-noty">
+								За каждого приглашенного реферала Вы и приглашенный получаете 30 монет после его первой игры.
+							</div>
+							<div class="section-check-box-container " value="" style="margin-top: 18px">
+								<input type="checkbox" name="option1" value="a1" checked>
+								<span class="check-box-title" style="color: inherit">Мне 18 и я ознакомился с <a href="/terms" style="color: orange">правилами и условиями</a></span>
+                            </div>
+						</div>
+
+						<div class="btn-link"><a class="btn" href="/referals">Перейти</a></div>
+					</div>
+					<div class="modal-section">
+						<div class="section-head">
+							<div class="section-block donate-icon"></div>
+							<div class="section-block title">Пополнить с помощью платежной системы</div>
+						</div>
+						<div class="section-description">
+							<div class="section-text">
+								Выберите удобный способ оплаты и получите необходимое количество монет на свой аккаунт
+							</div>
+							<div class="section-noty">
+							</div>
+							<div class="section-check-box-container " value="" style="margin-top: 95px">
+								<input type="checkbox" name="option1" value="a1" checked>
+								<span class="check-box-title" style="color: inherit">Мне 18 и я ознакомился с <a href="/terms" style="color: orange">правилами и условиями</a></span>
+                            </div>
+						</div>
+						<div class="btn-link"><a class="btn" href="/pay">Пополнить</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="bonus_modal">
+				<div class="bbm-modal__section">
+					<div class="game-price">
+					    <div class="arrow-bonus-left"></div>
+						    <div id="prpr2">
+						    <p style="color:orange">Получи 5% бонус к выигрышу</p>
+							</div>
+						<div class="arrow-bonus-right"></div>
+					</div>
+					<div class="section-text">
+						<center>
+						<p>
+							<b>Добавь к своему никнейму CSGO-GO.COM и получи 5% бонус к выигрышу!</b>
+						</p>
+						</center>
+					</div>
+					<center>
+					<div class="modal_buttons" style="margin-top:55px">
+						<a href="https://steamcommunity.com/id/user/edit" target="_blank" class="btn-yellow">Получи 5% бонус</a>
+					</div>
+					</center>
+				</div>
+			</div>
+					</div>
+		<footer class = "footer blockBg">
+				<script>
+		function checkBoxcheck(){
+			var yearsCheck = document.getElementById('years-check').checked;
+			var tosCheck = document.getElementById('tos-check').checked;
+			if(yearsCheck && tosCheck){
+				document.getElementById('tos-submit').disabled = false;
+				$( document ).ready(function() {
+					$('#tos-submit').addClass('clicked-tos');
+				});
+			} else {
+				document.getElementById('tos-submit').disabled = true;
+				$( document ).ready(function() {
+					$('#tos-submit').removeClass('clicked-tos');
+				});
+			}
+		}
+		jQuery(function($) {
+			$(function() {
+
+			  // Проверим, есть ли запись в куках о посещении посетителя
+			  // Если запись есть - ничего не делаем
+			  //if (!$.cookie('was')) {
+
+				// Покажем всплывающее окно
+				$('#boxUserFirstInfo').arcticmodal({
+				  closeOnOverlayClick: false,
+				  closeOnEsc: false
+				});
+
+			  //}
+
+			  /* Запомним в куках, что посетитель к нам уже заходил
+			  $.cookie('was', true, {
+				expires: 365,
+				path: '/'
+			  });*/
+
+			})
+		})
+		</script>
+		<div style="display: none;">
+		  <div class="box-modal" id="boxUserFirstInfo">
+		    <img src="/templates/new/images/logo1.png" alt="" style="width: 182px; height: 39px; margin-bottom: -8px;margin-left: 145px; padding-bottom: 7px;">
+			<br>
+			<form>
+				<label>
+					<input type="checkbox" id="years-check" name="" value="" onchange="checkBoxcheck()" checked> Я старше 18 лет
+				</label>
+				<br>
+				<label>
+					<input type="checkbox" id="tos-check" name="" value="" onchange="checkBoxcheck()" checked> Я прочитал и согласен с <a href="/terms/" target="_blank">Пользовательским Соглашением.</a>
+				</label>
+				<br>
+				<input type='button' class="clicked-tos" id='tos-submit' OnClick="location.href='/?login';" value="Войти" />
+			</form>
+		  </div>
+		</div>
+					
+		
+		
+		
+		<script type="text/javascript">(function(w,doc) {
+		if (!w.__utlWdgt ) {
+			w.__utlWdgt = true;
+			var d = doc, s = d.createElement('script'), g = 'getElementsByTagName';
+			s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+			s.src = ('https:' == w.location.protocol ? 'https' : 'http')  + '://w.uptolike.com/widgets/v1/uptolike.js';
+			var h=d[g]('body')[0];
+			h.appendChild(s);
+		}})(window,document);
+		</script>
+		<div data-background-alpha="0.0" data-buttons-color="#2988a6" data-counter-background-color="#ffffff" data-share-counter-size="12" data-top-button="false" data-share-counter-type="common" data-share-style="0" data-mode="share" data-like-text-enable="false" data-hover-effect="rotate-cw" data-mobile-view="false" data-icon-color="#ffffff" data-orientation="horizontal" data-text-color="#ffffff" data-share-shape="round-rectangle" data-sn-ids="fb.vk.tw.ok.gp." data-share-size="30" data-background-color="#ffffff" data-preview-mobile="false" data-mobile-sn-ids="fb.vk.tw.wh.ok." data-pid="1663376" data-counter-background-alpha="0.5" data-following-enable="false" data-exclude-show-more="true" data-selection-enable="true" class="uptolike-buttons" ></div>
+		<div class="copyright"><a href="/terms" style="color:grey; margin: 10px;">Соглашение</a><a href="/about" style="color:grey; margin: 10px;">FAQ</a><a href="/articles" style="color:grey">Статьи</a></div>
+		<div class="copyrights"> CSGO-GO.COM 2016-2017 © All rights reserved. Is not a Gambling <img src="/templates/new/images/age.png" alt="Возрастное Играничение"></div> 
+		</footer>	
+		<!--footer class = "footer blockBg">
+			&copy; 2015-2017 csgo-go.com. Все права защищены.
+		</footer-->
+			<div class = "arrowup blockBg"></div>
+		<!--
+<div class = "chat_wrapper close  nologin" style = " ">
+		<div class = "chat_title  ">
+			<div class = "title_wrap">Чат</div>
+			<div class = "rollup">-</div>
+			<div class="chat"><div class="chat-show-button"><div class="chat-icon"></div><div class="title">Чат</div></div></div>
+			<div class = "settings"></div>
+		</div>
+		<div class = "chat_hider">
+			<div class = "chat_place">
+				<div class = "chat" id = "chat">
+				
+				</div>
+			</div>
+						<div class = "smiles clearfix">
+				<div class = "smile ab" title = ":)"></div>
+				<div class = "smile ac" title = ":("></div>
+				<div class = "smile ae" title = ":p"></div>
+				<div class = "smile af" title = "*becool*"></div>
+				<div class = "smile ag" title = ":D"></div>
+				<div class = "smile ah" title = "*didder*"></div>
+				<div class = "smile ai" title = "oO"></div>
+				<div class = "smile ak" title = "*cry*"></div>
+				<div class = "smile am" title = "*agress*"></div>
+				<div class = "smile ap" title = "*hihi*"></div>
+				<div class = "smile aq" title = "*devil*"></div>
+				<div class = "smile at" title = "*bue*"></div>
+				<div class = "smile av" title = "*stop*"></div>
+				<div class = "smile bb" title = "*bomb*"></div>
+				<div class = "smile bc" title = "*sos*"></div>
+				<div class = "smile bs9" title = "*gangser*"></div>
+				<div class = "smile da" title = "*read*"></div>
+				<div class = "smile db" title = "*bye*"></div>
+				<div class = "smile dc" title = "*idiot*"></div>
+				<div class = "smile dd" title = "*class*"></div>
+				<div class = "smile de" title = "*shootme*"></div>
+				<div class = "smile df" title = "*ura*"></div>
+				<div class = "smile dk" title = "*vdv*"></div>
+				<div class = "smile dl" title = "*rofl*"></div>
+				<div class = "smile dm" title = "*fireass*"></div>
+				<div class = "smile dn" title = "*bebebe*"></div>
+				<div class = "smile dt" title = "*ok*"></div>
+			</div>
+		</div>
+		<div class = "resizer"></div>
+	</div>
+	-->
+<div class="chat-wrapper">
+	<div class="chat">
+		<div class="chat-show-button">
+			<div class="chat-icon"></div>
+			<div class="title">Чат</div>
+		</div>
+        <div class="chat-header">
+			<div class="chat-icon"></div>
+			<div class="title">
+				<span>Чат</span><span class="room-name"></span>
+			</div>
+			<div class="controls">
+				<div class="hide-chat">
+					<span class="underscore"></span>
+					<div class="chat-hide-button"></div>
+				</div>
+			</div>
+		</div>
+		<div id="scroll_chat" class="chat-body">
+			<div id="common-messages"></div>
+			<div class="chat-scroll" style=""></div>
+		</div>
+		<div class="chat-footer">
+			<div class="chat-info-message" style="display: none;">
+				<span>Вы пишите сообщение слишком часто. Пожалуйста подождите.</span>
+			</div>
+			<div class="chat-ban" style="display: none;">
+				<span>Вы забанены. Причина:</span> <span class="chat-ban-reason"></span>. <br><span>Осталось:</span> <span class="ban-end-timestamp"></span>
+			</div>
+			<div class="chat-not-auth" style="display: none;">
+				Чтобы писать сообщения необходимо авторизоваться.
+			</div>
+			<div class="chat-not-play-any-game" style="display: none;">
+				Только учавствовшие в игре игроки могут писать.
+			</div>
+					</div>
+	</div>
+</div>
+	<div class = "messages"></div>
+		<div class = "livestat hidden" hidden>
+			<script type="text/javascript">
+				(function (d, w, c) {
+					(w[c] = w[c] || []).push(function() {
+						try {
+							w.yaCounter37897670 = new Ya.Metrika({
+								id:37897670,
+								clickmap:true,
+								trackLinks:true,
+								accurateTrackBounce:true
+							});
+						} catch(e) { }
+					});
+
+					var n = d.getElementsByTagName("script")[0],
+						s = d.createElement("script"),
+						f = function () { n.parentNode.insertBefore(s, n); };
+					s.type = "text/javascript";
+					s.async = true;
+					s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+					if (w.opera == "[object Opera]") {
+						d.addEventListener("DOMContentLoaded", f, false);
+					} else { f(); }
+				})(document, window, "yandex_metrika_callbacks");
+			</script>
+			<noscript><div><img src="https://mc.yandex.ru/watch/37897670" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+			<!-- /Yandex.Metrika counter -->
+			<!--LiveInternet counter--><script type="text/javascript"><!--
+			document.write("<a href='//www.liveinternet.ru/click' "+
+			"target=_blank><img src='//counter.yadro.ru/hit?t11.4;r"+
+			escape(document.referrer)+((typeof(screen)=="undefined")?"":
+			";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+			screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+			";"+Math.random()+
+			"' alt='' title='LiveInternet: показано число просмотров за 24"+
+			" часа, посетителей за 24 часа и за сегодня' "+
+			"border='0' width='88' height='31'><\/a>")
+			//--></script><!--/LiveInternet-->
+		</div>
+		<script defer src="//yandex.st/jquery/cookie/1.0/jquery.cookie.min.js"></script>
+	</body>
+</html>
